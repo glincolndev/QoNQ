@@ -191,7 +191,7 @@ function menu() {
   textSize(32);
   stopMusic(quizMusic)
   stopMusic(scoreMusic)
-  playMusic(menuMusic)
+  menuMusic.loop()
   
   let titleText = 'Quiz ou Não Quis';
   let titleWidth = textWidth(titleText);
@@ -406,8 +406,8 @@ function exibirQuiz() {
     background(img);
     
     stopMusic(menuMusic);
-    playMusic(quizMusic)
-    
+    quizMusic.loop()
+      
     textSize(15);
     let perguntaText = perguntasSelecionadas[perguntaAtualIndex].pergunta;
     let perguntaWidth = textWidth(perguntaText);
@@ -510,7 +510,7 @@ function prepararRetangulosErro() {
 function exibirResultado() {
   background(img);
   stopMusic(quizMusic)
-  playMusic(scoreMusic)
+  scoreMusic.loop()
   textSize(17);
   fill(0);
   text(`Você acertou ${acertos} perguntas!`, canvasWidth / 2, 25);
