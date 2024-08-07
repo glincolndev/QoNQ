@@ -189,9 +189,10 @@ function verificarModo() {
 function menu() {
   background(img); 
   textSize(32);
+    menuMusic.loop()
   stopMusic(quizMusic)
   stopMusic(scoreMusic)
-  menuMusic.loop()
+  
   
   let titleText = 'Quiz ou Não Quis';
   let titleWidth = textWidth(titleText);
