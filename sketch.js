@@ -189,10 +189,11 @@ function verificarModo() {
 function menu() {
   background(img); 
   textSize(32);
+    if(modo ===0){
   playMusic(menuMusic)
     stopMusic(quizMusic)
   stopMusic(scoreMusic)
-  
+    }
   let titleText = 'Quiz ou Não Quis';
   let titleWidth = textWidth(titleText);
   let titleHeight = textAscent() + textDescent();
