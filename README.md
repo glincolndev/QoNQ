@@ -6,4 +6,4 @@ Em cada nível, o jogador escolhe a resposta certa entre 4 alternativas. Ao acer
 
 Após passar por todos os níveis, é exibida a pontuação final e (caso exista) as questões erradas. Clicando em cada uma, mostra-se a resposta certa e sua explicação.
 
-
+O código principal do jogo está no arquivo _sketch.js_
